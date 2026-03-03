@@ -238,6 +238,12 @@ DistanceWithMIL:
   unit: km
   description: PID 21 - Distance traveled with MIL on
 
+FuelRailPressure:
+  datatype: float
+  type: sensor
+  unit: kPa
+  description: Fuel rail pressure from OBD. Uses PID 0x22 (fuel rail pressure relative to manifold vacuum) when available, otherwise falls back to PID 0x23 (fuel rail pressure direct injection).
+
 FuelRailPressureVac:
   datatype: float
   type: sensor
